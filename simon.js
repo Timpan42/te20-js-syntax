@@ -18,10 +18,12 @@ button.addEventListener('click', () => {
     const radius = radiusInput.value;
     const area = Math.PI * radius * radius;
     const circumference = 2 * Math.PI * radius;
+    
     const messageBox = document.querySelector('#message-box');
     let message = document.createElement('p');
     message.textContent = `Arean är ${area} cm²`;
     messageBox.appendChild(message);
+
     message = document.createElement('p');
     message.textContent = `Omkretsen är ${circumference} cm`;
     messageBox.appendChild(message);
